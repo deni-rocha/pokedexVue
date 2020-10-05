@@ -16,7 +16,7 @@
               <b-card-sub-title class="mb-2">{{pokemon.type}}</b-card-sub-title>
             </b-card-body>
         <b-list-group flush>
-      <b-list-group-item><b-button @click="mudarSprite" class="btnImg">Mudar Visualização</b-button></b-list-group-item>
+      <b-list-group-item><b-button @click="mudarSprite" id="btnCustom">Mudar Visualização</b-button></b-list-group-item>
     </b-list-group>
 
            
@@ -71,7 +71,7 @@ export default {
 </script>
 
 <style>
-  .btnImg{
+   #btnCustom{
     background: #193441;
   }
 </style>
