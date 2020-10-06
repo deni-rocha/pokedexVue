@@ -37,7 +37,7 @@ export default {
   created: function(){
     axios.get('https://pokeapi.co/api/v2/pokemon?limit=151&offset=0').then(res => {
       this.pokemons = res.data.results
-      this.filteredPokemons = res.data.results
+      this.filteredPokemons = res.data.results    
     })
   },
   components: {
@@ -54,13 +54,17 @@ export default {
   //  }
  },
  methods: {
-   buscar: function(){
+   buscar: function($event){
      this.filteredPokemons = this.pokemons;
      if(this.busca == '' || this.busca == ' '){
        this.filteredPokemons = ''
+       
      } else {
        this.exibirTodos = true
        this.filteredPokemons = this.pokemons.filter(pokemon => pokemon.name == this.busca.toLowerCase());
+      if($event.key ===  'Enter'){
+            document.activeElement.blur();
+      } 
      }
    },
    exibirAll($event){
@@ -81,7 +85,7 @@ export default {
      event.target.style.color = '#ff0000'
      event.target.classList.add('animate__flipInY')
      
-   }
+   },
  }
 }
 </script>
