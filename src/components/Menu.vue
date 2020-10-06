@@ -1,7 +1,7 @@
 <template>
   <div class="menu">
-     <b-button pill id="btnExibirTodos" class="btnCustom mb-4" @click="exibirAll" v-show="!exibirTodos">Exibir Todos</b-button>
-     <b-button pill id="btnOcultarTodos" class="btnCustom mb-4" @click="exibirAll" v-show="exibirTodos"> Voltar</b-button>
+     <b-button pill id="btnExibirTodos" class="btnCustom mb-2" @click="exibirAll" v-show="!exibirTodos">Exibir Todos</b-button>
+     <b-button pill id="btnOcultarTodos" class="btnCustom mb-2" @click="exibirAll" v-show="exibirTodos"> Voltar</b-button>
   </div>
 </template>
 

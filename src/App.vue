@@ -2,7 +2,7 @@
   <div id="app">
     <div class="container">
       <h1 class="tittle mb-5 animate__animated" @click="effect"> POKEDEX</h1>
-    <b-input-group  class="mb-5">
+    <b-input-group  class="mb-3">
       <b-input-group-prepend is-text>
         <b-icon icon="search" @click="buscar"></b-icon>
       </b-input-group-prepend>
